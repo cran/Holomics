@@ -1522,6 +1522,7 @@ text-align: left;
 <h2>Getting started</h2>
 <div id="installation" class="section level3">
 <h3>Installation</h3>
+<p>For the current Holomics version it is very important that you use R 4.2. and check that mixOmics was installed with version 6.22.0.</p>
 <div id="cran" class="section level4">
 <h4>CRAN</h4>
 <pre><code>install.packages(&quot;Holomics&quot;)</code></pre>
@@ -1535,14 +1536,23 @@ library(devtools)
 # Install Holomics package 
 install_github(&quot;MolinLab/Holomics&quot;)</code></pre>
 </div>
+<div id="additional-packages" class="section level4">
+<h4>Additional packages</h4>
+<p>You need to install the Bioconductor package separately.</p>
+<pre><code>if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+BiocManager::install(&quot;mixOmics&quot;)
+BiocManager::install(&quot;BiocParallel&quot;)</code></pre>
+<p>I could be that you need to install some Bioconductor packages separately. Just use the code snippet above.</p>
+</div>
 </div>
 <div id="start-application" class="section level3">
 <h3>Start application</h3>
 <p>Within the Rstudio environment, start the application either with</p>
 <pre><code>library(Holomics)
-runApp()</code></pre>
+run_app()</code></pre>
 <p>or</p>
-<pre><code>Holomics::runApp()</code></pre>
+<pre><code>Holomics::run_app()</code></pre>
 </div>
 <div id="data-preparation" class="section level3">
 <h3>Data preparation</h3>
@@ -1837,14 +1847,18 @@ Figure 7: Visualisation of the multi-omics page. On the left side, the datasets 
 <h2>Help pages</h2>
 <p>The help pages that can be found in the application provide short descriptions of the used plots as well as the feature selection and tuning processes. Additionally, there are several links to the mixOmics website or to other papers, where even more detailed information is provided, if desired.</p>
 </div>
+<div id="test-datasets" class="section level2">
+<h2>Test datasets</h2>
+<p>Examples of transcriptomics, metabolomics and microbiomics data as well as a file with the labels and class information can be found as additioal files in our paper TODO cite. These omics data can be uploaded directly into the application after removing the first line with the table title in each case. In addition, exactly the same datasets were processed with Holomics in the papers’ described case study.</p>
+</div>
 <div id="license" class="section level2">
 <h2>License</h2>
 <p>The <b>Holomics</b> package is distributed under GPL-3 (GNU GENERAL PUBLIC LICENSE version 3).</p>
 </div>
 <div id="cite" class="section level2">
 <h2>Cite</h2>
-<p>Munk, K., Tucek, L., Brader, G. &amp; Molin, E.M. (2023). Holomics - an user-friendly R Shiny application for multi-omics data integration and analysis (in preparation)<br>
-R package version 1.0.0. <a href="https://CRAN.R-project.org/package=Holomics" class="uri">https://CRAN.R-project.org/package=Holomics</a></p>
+<p>Munk, K., Ziemba, L., Ilina, D., Brader, G. &amp; Molin, E.M. (2023). Holomics - an user-friendly R Shiny application for multi-omics data integration and analysis<br>
+R package version 1.1.0 <a href="https://CRAN.R-project.org/package=Holomics" class="uri">https://CRAN.R-project.org/package=Holomics</a></p>
 </div>
 <div id="acknowledgements" class="section level2">
 <h2>Acknowledgements</h2>
@@ -1854,7 +1868,7 @@ R package version 1.0.0. <a href="https://CRAN.R-project.org/package=Holomics" c
 <h2>Session info</h2>
 <pre><code>#&gt; R version 4.2.0 (2022-04-22 ucrt)
 #&gt; Platform: x86_64-w64-mingw32/x64 (64-bit)
-#&gt; Running under: Windows 10 x64 (build 22621)
+#&gt; Running under: Windows 10 x64 (build 22631)
 #&gt; 
 #&gt; Matrix products: default
 #&gt; 
@@ -1867,25 +1881,25 @@ R package version 1.0.0. <a href="https://CRAN.R-project.org/package=Holomics" c
 #&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     
 #&gt; 
 #&gt; other attached packages:
-#&gt; [1] Holomics_1.0.0
+#&gt; [1] Holomics_1.1.0
 #&gt; 
 #&gt; loaded via a namespace (and not attached):
-#&gt;  [1] Rcpp_1.0.11         cellranger_1.1.0    pillar_1.9.0       
-#&gt;  [4] bslib_0.5.0         compiler_4.2.0      later_1.3.1        
-#&gt;  [7] jquerylib_0.1.4     highr_0.10          shinyWidgets_0.7.6 
-#&gt; [10] tools_4.2.0         digest_0.6.33       jsonlite_1.8.7     
-#&gt; [13] evaluate_0.21       lifecycle_1.0.3     tibble_3.2.1       
-#&gt; [16] pkgconfig_2.0.3     rlang_1.1.1         shiny_1.7.4.1      
-#&gt; [19] cli_3.6.1           rstudioapi_0.15.0   yaml_2.3.7         
-#&gt; [22] golem_0.4.1         xfun_0.39           fastmap_1.1.1      
-#&gt; [25] dplyr_1.1.2         knitr_1.43          htmlwidgets_1.6.2  
-#&gt; [28] generics_0.1.3      sass_0.4.7          vctrs_0.6.3        
-#&gt; [31] attempt_0.3.1       tidyselect_1.2.0    shinyvalidate_0.1.2
-#&gt; [34] glue_1.6.2          R6_2.5.1            fansi_1.0.4        
-#&gt; [37] readxl_1.4.3        rmarkdown_2.23      bookdown_0.34      
-#&gt; [40] magrittr_2.0.3      ellipsis_0.3.2      promises_1.2.0.1   
-#&gt; [43] htmltools_0.5.5     xtable_1.8-4        mime_0.12          
-#&gt; [46] httpuv_1.6.11       config_0.3.1        utf8_1.2.3         
+#&gt;  [1] Rcpp_1.0.12         cellranger_1.1.0    pillar_1.9.0       
+#&gt;  [4] bslib_0.6.1         compiler_4.2.0      later_1.3.2        
+#&gt;  [7] jquerylib_0.1.4     highr_0.10          shinyWidgets_0.8.2 
+#&gt; [10] tools_4.2.0         digest_0.6.34       jsonlite_1.8.8     
+#&gt; [13] evaluate_0.23       lifecycle_1.0.4     tibble_3.2.1       
+#&gt; [16] pkgconfig_2.0.3     rlang_1.1.3         shiny_1.8.0        
+#&gt; [19] cli_3.6.2           rstudioapi_0.15.0   yaml_2.3.8         
+#&gt; [22] golem_0.4.1         xfun_0.42           fastmap_1.1.1      
+#&gt; [25] dplyr_1.1.4         knitr_1.45          htmlwidgets_1.6.4  
+#&gt; [28] generics_0.1.3      sass_0.4.8          vctrs_0.6.5        
+#&gt; [31] attempt_0.3.1       tidyselect_1.2.0    shinyvalidate_0.1.3
+#&gt; [34] glue_1.7.0          R6_2.5.1            fansi_1.0.6        
+#&gt; [37] readxl_1.4.3        rmarkdown_2.26      bookdown_0.38      
+#&gt; [40] magrittr_2.0.3      ellipsis_0.3.2      promises_1.2.1     
+#&gt; [43] htmltools_0.5.7     xtable_1.8-4        mime_0.12          
+#&gt; [46] httpuv_1.6.14       config_0.3.2        utf8_1.2.4         
 #&gt; [49] visNetwork_2.1.2    cachem_1.0.8</code></pre>
 </div>
 <div id="references" class="section level2 unnumbered">

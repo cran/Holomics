@@ -2,12 +2,12 @@ Type: Package
 Package: Holomics
 Title: An User-Friendly R 'shiny' Application for Multi-Omics Data
         Integration and Analysis
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: c(
-    person("Katharina", "Munk", , "katharinamunk@yahoo.de", role = c("aut", "cre")),
+    person("Katharina", "Munk", email = "katharinamunk@yahoo.de", role = c("aut", "cre")),
     person("Eva M.", "Molin", role = c("aut", "ctb")),
     person("Günter", "Brader", role = "ctb"),
-    person("Lisa", "Tucek", role = "ctb"),
+    person("Lisa", "Ziemba", role = "ctb"),
     person("AIT Austrian Institute of Technology GmbH", role = "cph")
   )
 Description: A 'shiny' application, which allows you to perform single- and
@@ -28,19 +28,19 @@ biocViews:
 Imports: bs4Dash (>= 2.0.2), config, dplyr, DT, ggplot2, golem, igraph,
         openxlsx, readxl, shiny (>= 1.6.0), shinyalert, shinybusy,
         shinyjs, shinyvalidate, shinyWidgets, stringr, tippy,
-        visNetwork, mixOmics, BiocParallel
-Suggests: bookdown, knitr, rmarkdown
+        visNetwork, mixOmics, BiocParallel, markdown
+Suggests: bookdown, knitr, rmarkdown, badger
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2023-08-20 09:29:26 UTC; Kathi
+Packaged: 2024-03-07 20:22:26 UTC; Kathi
 Author: Katharina Munk [aut, cre],
   Eva M. Molin [aut, ctb],
   Günter Brader [ctb],
-  Lisa Tucek [ctb],
+  Lisa Ziemba [ctb],
   AIT Austrian Institute of Technology GmbH [cph]
 Maintainer: Katharina Munk <katharinamunk@yahoo.de>
 Repository: CRAN
-Date/Publication: 2023-08-21 14:00:10 UTC
+Date/Publication: 2024-03-07 20:40:02 UTC
