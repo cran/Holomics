@@ -1,3 +1,5 @@
+# Holomics 1.1.1
+
 # Holomics 1.1.0
 ## New features
 * Infoboxes on upload page by default open

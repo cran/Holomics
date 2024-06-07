@@ -2,7 +2,7 @@ Type: Package
 Package: Holomics
 Title: An User-Friendly R 'shiny' Application for Multi-Omics Data
         Integration and Analysis
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(
     person("Katharina", "Munk", email = "katharinamunk@yahoo.de", role = c("aut", "cre")),
     person("Eva M.", "Molin", role = c("aut", "ctb")),
@@ -28,14 +28,15 @@ biocViews:
 Imports: bs4Dash (>= 2.0.2), config, dplyr, DT, ggplot2, golem, igraph,
         openxlsx, readxl, shiny (>= 1.6.0), shinyalert, shinybusy,
         shinyjs, shinyvalidate, shinyWidgets, stringr, tippy,
-        visNetwork, mixOmics, BiocParallel, markdown
+        visNetwork, mixOmics, BiocParallel, markdown, ggrepel,
+        matrixStats, RSpectra, reshape2, tidyr, uuid
 Suggests: bookdown, knitr, rmarkdown, badger
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2024-03-07 20:22:26 UTC; Kathi
+Packaged: 2024-06-07 18:54:22 UTC; Kathi
 Author: Katharina Munk [aut, cre],
   Eva M. Molin [aut, ctb],
   Günter Brader [ctb],
@@ -43,4 +44,4 @@ Author: Katharina Munk [aut, cre],
   AIT Austrian Institute of Technology GmbH [cph]
 Maintainer: Katharina Munk <katharinamunk@yahoo.de>
 Repository: CRAN
-Date/Publication: 2024-03-07 20:40:02 UTC
+Date/Publication: 2024-06-07 19:10:02 UTC

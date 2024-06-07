@@ -1,6 +1,6 @@
-f095a3c8cf3c97552f17077bc82a6620 *DESCRIPTION
+0697703ef88a9a91f03fee29cf2b27b1 *DESCRIPTION
 4a51d75e3eae4155fe29707ac43ef6ce *NAMESPACE
-693f715ffadba902741df14f039f9d80 *NEWS.md
+9f2d28091fb6959a3c511d326ec64749 *NEWS.md
 7c57156ba02d1e5e0150c169ceb460b5 *R/app_config.R
 c4ab14a7d1983b62535084a5ff0996ba *R/app_server.R
 508948d8aa9fbb4d7a7b7637ecebe5a4 *R/app_ui.R
@@ -15,7 +15,7 @@ c4ab14a7d1983b62535084a5ff0996ba *R/app_server.R
 4f2e4cc9299d77e709e635fef3c01198 *R/utils_sPLS.R
 9d2ba31ffcc16d1bf6c7e943dae971c8 *R/utils_server.R
 9598f9422e1397894410f854d065c91f *R/utils_ui.R
-8110ac0ecb534730d7ce6705adaca3f8 *README.md
+6b48d3f235cd4251d1d148bdbc1230dd *README.md
 141d28741d514d26b4eddba9612fd508 *build/vignette.rds
 80b27d4f5823a9a6fd22cafd6da2a8c4 *inst/CITATION
 2cd5d647d753c1681ce2e8015ea0824f *inst/WORDLIST
@@ -41,11 +41,11 @@ c5f34dcc762a12a73af0e0f495ce2e83 *inst/app/www/img/diablo_navigation/arrow_left.
 eeab94a21f45c1ac47855c31112d7d8b *inst/app/www/img/logo_ait.png
 5d3e925453c6fc4a0d8dd71123cb689c *inst/app/www/img/workflow.png
 ee01028f644c8f74537388b7933c057a *inst/doc/Holomics.R
-ce5a6622660c6682611649ce84913623 *inst/doc/Holomics.Rmd
-7863afa2232d17e1be568b6ca82c081c *inst/doc/Holomics.html
+a41e96c687d40048e8374145cdd61f07 *inst/doc/Holomics.Rmd
+d9540cbe911249173927cb2e26bebfa4 *inst/doc/Holomics.html
 811d08e0f749e9d23bfc5d0897daacb6 *inst/golem-config.yml
 9159170d4c561d0f757436ef047d128c *man/run_app.Rd
-ce5a6622660c6682611649ce84913623 *vignettes/Holomics.Rmd
+a41e96c687d40048e8374145cdd61f07 *vignettes/Holomics.Rmd
 8848a441b0a6f5af7e814d0cbdd5b6eb *vignettes/bibliography.bib
 c6aa331b61775b7682e5e3becb3a24a1 *vignettes/data/asv_small.xlsx
 39c34a58c3c1c916464fa6e3f7dfd32e *vignettes/data/labels.xlsx
