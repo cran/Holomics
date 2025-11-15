@@ -2,7 +2,7 @@ Type: Package
 Package: Holomics
 Title: A User-Friendly R 'shiny' Application for Multi-Omics Data
         Integration and Analysis
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: c(
     person("Katharina", "Munk", email = "katharinamunk@yahoo.de", role = c("aut", "cre")),
     person("Eva M.", "Molin", role = c("aut", "ctb")),
@@ -35,7 +35,7 @@ Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-09-12 12:24:20 UTC; Kathi
+Packaged: 2025-11-15 20:12:00 UTC; Kathi
 Author: Katharina Munk [aut, cre],
   Eva M. Molin [aut, ctb],
   Günter Brader [ctb],
@@ -43,4 +43,4 @@ Author: Katharina Munk [aut, cre],
   AIT Austrian Institute of Technology GmbH [cph]
 Maintainer: Katharina Munk <katharinamunk@yahoo.de>
 Repository: CRAN
-Date/Publication: 2025-09-12 12:40:02 UTC
+Date/Publication: 2025-11-15 20:30:02 UTC

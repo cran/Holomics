@@ -1,3 +1,6 @@
+# Holomics 1.2.1
+* Fixed error when downloading loadings as table
+
 # Holomics 1.2.0
 ## Improvements and fixes
 * Fixed errors with mixOmics version 6.32.0
